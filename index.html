@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Kelly Winfield the Graphic Design and Web Developer</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body data-spy="scroll" data-target=".navbar-nav" data-offset="90">
+    <div class="container">
+        <div class="wrap">
+            <div class="inputText">
+                <textarea class="fromText" placeholder="Enter Text"></textarea>
+                <textarea class="toText" placeholder="Translation" readonly disabled></textarea>
+            </div>
+            <ul class="controls">
+                <li class="row from">
+                    <div class="icons">
+                        <i class="fas fa-microphone-alt" onclick="iconFunction(0, 'record')"></i>
+                        <i class="fas fa-volume-up" onclick="iconFunction(0, 'speek')"></i>
+                        <i class="fas fa-copy" onclick="iconFunction(0, 'copy')"></i>
+                    </div>
+                    <select>
+
+                    </select>
+                </li>
+                <li class="exchange">
+                    <i class="fas fa-exchange-alt"></i>
+                </li>
+                <li class="row to">
+                    <select>
+
+                    </select>
+                    <div class="icons">
+                        <i class="fas fa-volume-up" onclick="iconFunction(1, 'speek')"></i>
+                        <i class="fas fa-copy" onclick="iconFunction(1, 'copy')"></i>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <button class="transBtn">Translate Text</button>
+    </div>
+    <script src="js/countries.js"></script>
+    <script src="js/script.js"></script>
+
+
+</body>
+
+</html>
